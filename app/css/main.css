@@ -1,0 +1,504 @@
+@import url(../libs/bootstrap/css/bootstrap.min.css);
+@import url(../libs/icons/fontello.css);
+@font-face {
+  font-family: "RobotoRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/robot/Roboto-Regular.eot");
+  src: url("../fonts/robot/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/robot/Roboto-Regular.woff") format("woff"), url("../fonts/robot/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/robot/Roboto-Medium.eot");
+  src: url("../fonts/robot/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/robot/Roboto-Medium.woff") format("woff"), url("../fonts/robot/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/robot/Roboto-Bold.eot");
+  src: url("../fonts/robot/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/robot/Roboto-Bold.woff") format("woff"), url("../fonts/robot/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoBlack";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/robot/Roboto-Bold.eot");
+  src: url("../fonts/robot/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/robot/Roboto-Bold.woff") format("woff"), url("../fonts/robot/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "fontello";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../icons/fontello.eot");
+  src: url("../icons/fontello.eot?#iefix") format("embedded-opentype"), url("../icons/fontello.woff") format("woff"), url("../icons/fontello.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "RobotoRegular", "sans-serif";
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.minHeight {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.header .menu_btn {
+  border: none;
+  outline: none;
+  display: block;
+  padding: 1rem 1.2rem;
+  border-radius: 0.9rem;
+}
+
+.header .menu_left {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  align-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.header .menu_left .logo {
+  display: block;
+}
+
+.header .menu_left .logo > img {
+  display: block;
+  max-width: 100%;
+}
+
+.header .menu_list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  margin: 0;
+  height: 100%;
+}
+
+.header .menu_link {
+  color: black;
+  font-size: 1.5rem;
+  font-family: "RobotoMedium", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.header .menu_link:hover {
+  text-decoration: none;
+}
+
+.main .about {
+  width: 100%;
+  min-height: 115vh;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.main .about_box {
+  padding-top: 28vh;
+}
+
+.main .about_box .hey {
+  font-size: 4.8rem;
+  text-transform: capitalize;
+  font-family: "RobotoMedium", "sans-serif";
+}
+
+.main .about_box .name {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: "RobotoBlack", "sans-serif";
+}
+
+.main .about_box .prefesion {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.main .about_btns {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+
+.main .about_btns .hireMe-btn,
+.main .about_btns .getCV-btn {
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  border: 0.3rem solid transparent;
+  border-radius: 0.4rem;
+  padding: .8rem 2.2rem;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  color: whitesmoke;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  box-shadow: 0 1rem 3rem rgba(57, 56, 61, 0.205);
+}
+
+.main .about_btns .hireMe-btn {
+  margin-right: 2rem;
+}
+
+.main .about_btns .hireMe-btn::after {
+  position: absolute;
+  top: -0.2rem;
+  left: -0.2rem;
+  bottom: -0.2rem;
+  right: -0.2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  content: ' ';
+  z-index: -1;
+  border-radius: 0.4rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.main .about_btns .hireMe-btn:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.main .about_btns .getCV-btn {
+  background: white;
+  color: black;
+  border: 0.3rem solid #6D52E7;
+}
+
+.main .about_btns .getCV-btn::after {
+  position: absolute;
+  top: -0.2rem;
+  left: -0.2rem;
+  bottom: -0.2rem;
+  right: -0.2rem;
+  content: ' ';
+  z-index: -1;
+  border-radius: 0.4rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.main .about_btns .getCV-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+.main .about_banner {
+  padding-top: 15vh;
+}
+
+.main .skills_title > span {
+  font-size: 3.5rem;
+  letter-spacing: 1.3rem;
+  font-family: "RobotoBold", sans-serif;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.main .skills_text {
+  font-size: 1.8rem;
+  font-family: "RobotoMedium", sans-serif;
+  color: #778280;
+  padding-bottom: 1rem;
+}
+
+.main .skills_btn {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  color: whitesmoke;
+  -webkit-transition: background .6s ease;
+  transition: background .6s ease;
+  box-shadow: 0 1rem 3rem rgba(57, 56, 61, 0.205);
+  text-transform: uppercase;
+  padding: .8rem 2.2rem;
+  border: 0.3rem solid transparent;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.main .experience {
+  min-height: 100vh;
+}
+
+.main .experience_brand {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0.1rem solid #201f1f17;
+  text-align: center;
+  padding: 1.8rem 0rem;
+  margin: .9rem 0;
+  height: 12rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .8s ease;
+  transition: -webkit-transform .8s ease;
+  transition: transform .8s ease;
+  transition: transform .8s ease, -webkit-transform .8s ease;
+  border-radius: 0.9rem;
+}
+
+.main .experience_brand:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: brightness(0.15);
+  filter: brightness(0.15);
+}
+
+.main .experience_info-wrapper {
+  position: relative;
+  min-height: 40rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.main .experience_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 40rem;
+  height: 40rem;
+  background: #e029290a;
+  border-radius: 0.9rem;
+}
+
+.main .experience_top {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+
+.main .experience_top-left {
+  position: relative;
+}
+
+.main .experience_top-left > img {
+  margin-left: 5rem;
+}
+
+.main .experience_top-left > span {
+  font-size: 10rem;
+  position: absolute;
+  top: 1rem;
+  left: 7.5rem;
+  color: #854fee;
+}
+
+.main .experience_top-right {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.main .experience_top-right > span {
+  display: block;
+  font-size: 2.8rem;
+}
+
+.main .experience_bottom {
+  margin-top: auto;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 4rem;
+  padding-left: 7rem;
+}
+
+.main .experience_bottom-left > .icon-phone {
+  font-size: 3rem;
+}
+
+.main .experience_bottom-right {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.main .experience_bottom-right > a {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.main .experience_bottom-right > span {
+  font-size: 1.8rem;
+}
+
+.main .services_title {
+  text-align: center;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-family: "RobotoBold", sans-serif;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.main .services_subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "RobotoMedium", sans-serif;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+}
+
+.main .services_card {
+  background: rgba(248, 252, 253, 0.973);
+  text-align: center;
+  padding: 3rem 0;
+  margin-top: 5rem;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  border-radius: 0.9rem;
+}
+
+.main .services_card:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.main .services_card > img {
+  padding: 2.4rem 0;
+}
+
+.main .services_card-body {
+  padding: 2rem;
+}
+
+.main .services_card-title {
+  font-size: 2.5rem;
+  font-family: "RobotoMedium", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.main .services_card-text {
+  font-size: 1.6rem;
+  color: #6c757d;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
+.main .projects_title {
+  text-align: center;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-family: "RobotoBold", sans-serif;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.main .projects_list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  padding: 1rem 0;
+}
+
+.main .projects_item {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "RobotoMedium", sans-serif;
+  padding: 1rem 2rem 1rem 1rem;
+  cursor: pointer;
+}
+
+.main .projects_activeItem {
+  color: #4458dc;
+}
+
+.main .projects_card > a {
+  display: block;
+}
+
+.main .projects_card-title {
+  font-size: 1.8rem;
+  font-family: "RobotoMedium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1rem 0 0;
+  margin: 0;
+}
+
+.main .projects_card-text {
+  color: #6c757d;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}

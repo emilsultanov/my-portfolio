@@ -1,0 +1,373 @@
+
+@import "variables"
+@import "fonts"
+@import "libs"
+
+// Common properties
+*
+   margin: 0
+   padding: 0
+   box-sizing: border-box
+
+html
+   font-size: 10px
+
+body
+   font-family: $RobotoRegular,'sans-serif'
+   font-weight: normal
+   font-style: normal
+   color: black
+
+ul
+   list-style: none
+
+.minHeight
+   width: 100%
+   min-height: 100vh
+   height: 100%
+
+// Header
+.header
+
+   // Menu
+   .menu
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding: 1rem 0
+
+      &_btn
+         border: none
+         outline: none
+         display: block
+         padding: 1rem 1.2rem
+         border-radius: 0.9rem
+
+      &_left
+         display: inline-flex
+         flex-direction: row
+         align-content: center
+         align-items: center
+
+         .logo
+            display: block
+
+            &>img
+               display: block
+               max-width: 100%
+
+      &_list
+         display: flex
+         flex-direction: row
+         margin: 0
+         height: 100%
+
+      &_link
+         color: black
+         font-size: 1.5rem
+         font-family: $RobotoMedium,sans-serif
+         text-transform: uppercase
+         padding: 1rem
+
+         &:hover
+            text-decoration: none
+
+// Main
+.main
+
+   // About
+   .about
+      background:
+      width: 100%
+      min-height: 115vh
+      background-repeat: no-repeat
+      background-position: top left
+
+      &_box
+         padding-top: 28vh
+
+         .hey
+            font-size: 4.8rem
+            text-transform: capitalize
+            font-family: $RobotoMedium,'sans-serif'
+
+         .name
+            font-size: 5rem
+            text-transform: uppercase
+            font-family: $RobotoBlack,'sans-serif'
+
+         .prefesion
+            font-size: 3.5rem
+            margin-bottom: 1rem
+
+      &_btns
+         display: flex
+         flex-direction: row
+
+         .hireMe-btn,
+         .getCV-btn
+            outline: none
+            text-transform: uppercase
+            font-size: 1.8rem
+            border: 0.3rem solid transparent
+            border-radius: 0.4rem
+            padding: .8rem 2.2rem
+            position: relative
+            // z-index: 1
+            background: linear-gradient(90deg, #4458dc 0%, #854fee 100%)
+            background-clip: padding-box
+            color: whitesmoke
+            transition: all 0.8s ease
+            box-shadow: 0 1rem 3rem rgba(57, 56, 61, 0.205)
+
+         .hireMe-btn
+            margin-right: 2rem
+
+            &::after
+               position: absolute
+               top: -0.2rem
+               left: -0.2rem
+               bottom: -0.2rem
+               right: -0.2rem
+               background: linear-gradient(90deg, #4458dc 0%, #854fee 100%)
+               content: ' '
+               z-index: -1
+               border-radius: 0.4rem
+               transition: all 0.8s ease
+
+            &:hover
+               background: whitesmoke
+               background-clip: padding-box
+               color: black
+
+         .getCV-btn
+            background: white
+            color: black
+            border: 0.3rem solid #6D52E7
+
+            &::after
+               position: absolute
+               top: -0.2rem
+               left: -0.2rem
+               bottom: -0.2rem
+               right: -0.2rem
+               content: ' '
+               z-index: -1
+               border-radius: 0.4rem
+               transition: all 0.8s ease
+
+            &:hover
+               background: linear-gradient(90deg, #4458dc 0%, #854fee 100%)
+               color: whitesmoke
+               border-color: whitesmoke
+
+      &_banner
+         padding-top: 15vh
+
+   // Skills
+   .skills
+      &_title
+         &>span
+            font-size: 3.5rem
+            letter-spacing: 1.3rem
+            font-family: $RobotoBold,sans-serif
+            display: block
+            padding-bottom: 1rem
+
+      &_text
+         font-size: 1.8rem
+         font-family: $RobotoMedium,sans-serif
+         color: #778280
+         padding-bottom: 1rem
+
+      &_btn
+         background: linear-gradient(90deg, #4458dc 0%, #854fee 100%)
+         background-clip: padding-box
+         color: whitesmoke
+         transition: background .6s ease
+         box-shadow: 0 1rem 3rem rgba(57, 56, 61, 0.205)
+         text-transform: uppercase
+         padding: .8rem 2.2rem
+         border: 0.3rem solid transparent
+         border-radius: 0.8rem
+         font-size: 2rem
+         letter-spacing: 0.1rem
+
+   // Experience
+   .experience
+      min-height: 100vh
+
+      &_brand
+         display: flex
+         justify-content: center
+         align-items: center
+         border: 0.1rem solid #201f1f17
+         text-align: center
+         padding: 1.8rem 0rem
+         margin: .9rem 0
+         height: 12rem
+         cursor: pointer
+         transition: transform .8s ease
+         border-radius: 0.9rem
+         &:hover
+            box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205)
+            transform: scale(1.1)
+            filter: brightness(0.15)
+
+      &_info-wrapper
+         position: relative
+         min-height: 40rem
+         display: flex
+         flex-direction: column
+
+      &_bg
+         position: absolute
+         top: 0
+         right: 0
+         z-index: -1
+         width: 40rem
+         height: 40rem
+         background: #e029290a
+         border-radius: 0.9rem
+
+      &_top
+         display: flex
+         flex-direction: row
+
+      &_top-left
+         position: relative
+
+      &_top-left > img
+         //margin-top: 3rem
+         margin-left: 5rem
+
+      &_top-left > span
+         font-size: 10rem
+         position: absolute
+         top: 1rem
+         left: 7.5rem
+         color: #854fee
+
+      &_top-right
+         display: flex
+         flex-direction: column
+         justify-content: center
+         padding-left: 2rem
+
+      &_top-right > span
+         display: block
+         font-size: 2.8rem
+
+      &_bottom
+         margin-top: auto
+         display: inline-flex
+         flex-direction: row
+         justify-content: center
+         align-items: center
+         padding-bottom: 4rem
+         padding-left: 7rem
+
+      &_bottom-left > .icon-phone
+         font-size: 3rem
+
+      &_bottom-right
+         display: inline-flex
+         flex-direction: column
+         align-items: center
+
+      &_bottom-right > a
+         text-transform: uppercase
+         font-size: 2.2rem
+
+      &_bottom-right > span
+         font-size: 1.8rem
+
+   // Services
+   .services
+      &_title
+         text-align: center
+         font-size: 2.8rem
+         text-transform: uppercase
+         font-family: $RobotoBold,sans-serif
+         margin-bottom: 2rem
+         letter-spacing: 0.1rem
+
+      &_subtitle
+         text-align: center
+         font-size: 1.6rem
+         font-family: $RobotoMedium,sans-serif
+         letter-spacing: 0.1rem
+         word-spacing: 0.1rem
+
+      &_card
+         background: rgba(248, 252, 253, 0.973)
+         text-align: center
+         padding: 3rem 0
+         margin-top: 5rem
+         transition: all 0.6s ease
+         border-radius: 0.9rem
+         &:hover
+            box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205)
+
+      &_card > img
+         padding: 2.4rem 0
+
+      &_card-body
+         padding: 2rem
+
+      &_card-title
+         font-size: 2.5rem
+         font-family: $RobotoMedium,sans-serif
+         text-transform: uppercase
+         margin-bottom: 1.2rem
+
+      &_card-text
+         font-size: 1.6rem
+         color: #6c757d
+         line-height: 1.5
+         letter-spacing: 0.1rem
+
+   // Projects
+   .projects
+      &_title
+         text-align: center
+         font-size: 2.8rem
+         text-transform: uppercase
+         font-family: $RobotoBold,sans-serif
+         margin-bottom: 2rem
+         letter-spacing: 0.1rem
+
+      &_list
+         display: flex
+         flex-direction: row
+         padding: 1rem 0
+
+      &_item
+         text-transform: uppercase
+         font-size: 2rem
+         font-family: $RobotoMedium,sans-serif
+         padding: 1rem 2rem 1rem 1rem
+         cursor: pointer
+
+      &_activeItem
+         color: #4458dc
+
+      &_card > a
+         display: block
+
+      &_card-title
+         font-size: 1.8rem
+         font-family: $RobotoMedium,sans-serif
+         text-transform: uppercase
+         letter-spacing: 0.1rem
+         padding: 1rem 0 0
+         margin: 0
+
+      &_card-text
+         color: #6c757d
+         font-size: 1.6rem
+         text-transform: capitalize
+
+// Media-queries
+@import "media"
